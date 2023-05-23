@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>portfolio website</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="https://i.pinimg.com/736x/51/59/b3/5159b321713edef6c6a3b8f930f667a1.jpg"
+            class="logo"
+            alt=""
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <ion-icon name="crop-outline" class="icon1"onclick="closemenu()"></ion-icon>
+          </ul>
+          <ion-icon name="menu-outline"class="icon2"onclick="openmenu()"></ion-icon>
+        </nav>
+        <div class="header-text">
+          <p>HTML & CSS Developer</p>
+          <h1>Hi, I am <span>Sakshi</span> <br />
+            <!-- from coding-era</h1> -->
+        </div>
+      </div>
+    </div>
+    <!-------====about section====------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/laptop2.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hie! I'm sakshi from coding-era. I am pursueing my graduation in
+              BCS from tulsi college of computer science and IT, beed.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experiance')">
+                Experiance
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>HTML & CSS Developing</span><br />advertising</li>
+                <li><span>web development</span><br />app development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experiance">
+              <ul>
+                <li><span> fresher</span><br />curious/exited to work</li>
+
+                <h2>Programming languages that i have learned:</h2>
+                <li>C: 60%</li>
+                <li>CPP: 80%</li>
+                <li>HTML & CSS: 80%</li>
+                <li>SQL: 60%</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span> 2019</span><br />SSC-84.20%</li>
+                <li><span>2021</span><br />HSC-86%</li>
+                <li><span> 2022</span><br />FIRST Yr.-86.87%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------services section---------->
+    <div id="services">
+      <div class="container">
+      <h1 class="sub-title">my services</h1>
+      <div class="services-list">
+        <nav class="midle"id="col-1">
+          <div>
+            <ion-icon name="code-slash-outline"></ion-icon>
+          <h2>web design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam quaerat, nisi incidunt accusantium beatae?</p>
+          <a href="#">learn more</a>
+        </div>
+        </nav>
+        <article class="midle"id="col-2">
+        <div>
+          <ion-icon name="megaphone-outline"></ion-icon>
+        <h2>advertising</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam quaerat, nisi incidunt accusantium beatae?</p>
+          <a href="#">learn more</a>
+        </div>
+        </article>
+        <aside class="midle"id="col-3">
+        <div>
+          <ion-icon name="laptop-outline"></ion-icon>
+        <h2>HTML & CSS Developing</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam quaerat, nisi incidunt accusantium beatae?</p>
+          <a href="#">learn more</a>
+        </div>
+        </aside>
+      </div>
+    </div>
+    </div>
+    <!---------portfolio section--------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/laptop5.jpg">
+            <div class="layer">
+              <h2>social media</h2>
+              <p>social media app...download from playstore.</p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/laptop3.jpg">
+            <h2>social media</h2>
+            <p>social media app...download from playstore.</p>
+          </div>
+          <div class="work">
+            <img src="images/laptop4.jpg">
+            <h2>social media</h2>
+            <p>social media app...download from playstore.</p>
+          </div>
+        </div>
+      
+        <a href="#"class="btn">See More</a>
+      </div>
+    </div>
+    <!-------------contact section------------->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="email">
+           <p>email-id: <a href="codingera0903@gmail.com">condingera0903@gmail.com</a></p> 
+          </div>
+          </div>
+          <div class="contact-right">
+            <form>
+
+              <input type="text"name="name"placeholder="Your Name"required>
+              <input type="email"name="email"placeholder="Your Email-id"required>
+              <textarea name="message"rows="6"placeholder="Your Message"></textarea>
+              <button type="submit" class="btn1">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu=document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
+      }
+    </script>
+  </body>
+</html>
